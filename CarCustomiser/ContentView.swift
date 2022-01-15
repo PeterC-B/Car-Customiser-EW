@@ -24,7 +24,6 @@ struct ContentView: View {
             get : { self.exhaustPackage},
             set: { newValue in
                 if money < 45{
-                    print("Less than")
                     return
                 }
                 else {
@@ -43,7 +42,6 @@ struct ContentView: View {
             get : { self.tiresPackage},
             set: { newValue in
                 if money < 19{
-                    print("Less than")
                     return
                 }
                 else {
@@ -62,7 +60,6 @@ struct ContentView: View {
             get : { self.turboPackage},
             set: { newValue in
                 if money < 35{
-                    print("Less than")
                     return
                 }
                 else {
@@ -81,7 +78,6 @@ struct ContentView: View {
             get : { self.engineUpgradePackage},
             set: { newValue in
                 if money < 60{
-                    print("Less than")
                     return
                 }
                 else {
