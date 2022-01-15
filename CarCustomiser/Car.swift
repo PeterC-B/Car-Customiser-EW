@@ -15,7 +15,13 @@ struct Car {
     var handling: Int
     
     func getDetails() -> String{
-        let details = "Make: \(self.make)\nModel: \(self.model)\nTop Speed: \(self.topSpeed)mph\nAcceleration (0-60): \(self.acceleration)s\nHandling: \(self.handling)\n"
+        let details = """
+            Make: \(make)
+            Model: \(model)
+            Top Speed: \(topSpeed)mph
+            Acceleration (0-60 in): \(acceleration)s
+            Handling: \(handling)
+        """
         return details
     }
 }

@@ -22,7 +22,17 @@ class CarCustomiserTests: XCTestCase {
     
     func testNewCarDetailsFunctionReturnsExpectedValues() {
         let car = Car(make: "Mazda", model: "MX-5", topSpeed: 125, acceleration: 7.7, handling: 5)
-        XCTAssertEqual(car.getDetails(), "Make: Mazda\nModel: MX-5\nTop Speed: 125mph\nAcceleration (0-60): 7.7s\nH andling: 5\n")
+        let expected = """
+            Make: Mazda
+            Model: MX-5
+            Top Speed: 125mph
+            Acceleration (0-60 in): 7.7s
+            Handling: 5
+        """
+        //arrange
+        let actual = car.getDetails()
+        //assert
+        XCTAssertEqual(actual, expected)
     }
 
 }
